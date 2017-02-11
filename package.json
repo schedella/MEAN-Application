@@ -1,15 +1,22 @@
 {
   "name": "meanbasic",
   "version": "1.0.0",
-  "description": "This application having basic structure along with login module",
+  "description": "A simple navigation applcation",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install"
   },
   "author": "Sudheer Chedella",
   "license": "ISC",
+  "engines": {
+    "node": "6.9.2",
+    "npm": "3.10.9"
+  },
   "dependencies": {
+    "@types/node": "^7.0.5",
+    "@types/npm": "^2.0.28",
     "body-parser": "^1.16.0",
     "cookie-parser": "^1.4.3",
     "ejs": "^2.5.5",
